@@ -1,0 +1,15 @@
+Uses Graph;
+var Device, Mode, x, y, i: Integer;
+Begin
+	Device:=0;
+	initGraph(Device, Mode, ' ');
+	x:= 320;
+	y:= 240;
+	i:= 30;
+	SetColor(Yellow);
+	Repeat
+	circle(x,y,i);
+	 i:= i+2
+	Until i>230;	
+	Readln
+End.
