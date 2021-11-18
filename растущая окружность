@@ -1,0 +1,15 @@
+Uses Graph;
+var Device, Mode, x, y, i: Integer;
+Begin
+	Device:=0;
+	initGraph(Device, Mode, ' ');
+	x:= 320;
+	y:= 240;
+	circle(x,y,2);
+	For i:= 2 to 200 Do
+	Begin
+	 circle(x,y,2+i)
+	End;
+	
+	Readln
+End.
