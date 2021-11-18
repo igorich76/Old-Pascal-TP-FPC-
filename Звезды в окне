@@ -1,0 +1,11 @@
+Uses Graph;
+var Device, Mode, i: Integer;
+Begin
+	Device:=0;
+	initGraph(Device, Mode, ' ');
+	rectangle(100,100,500,300);
+	Randomize;
+	For i:= 1 to 1000 do
+	putPixel(100+Random(399), 100+Random(199), Random(16));
+	Readln
+End.
