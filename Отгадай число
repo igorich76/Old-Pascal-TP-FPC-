@@ -1,0 +1,30 @@
+program pr1;
+label m1, m2;
+var a,a1,b,b1: integer;
+
+begin
+  ////////-1-/////////
+  m1: writeln('введите первое число (0-1)>>');
+  read(a);
+  randomize;
+  b:=random(2);
+  if (a<>b) then 
+  begin
+  writeln('эх, не угадал! попробуй ещё!');   
+  goto m1;  
+  end
+  else writeln('угадал! идём дальше!');
+  /////////-2-/////////
+  m2: writeln('введите второе число (0-1)>>');
+  read(a1);
+  randomize;
+  b1:=random(2);
+  if (a1<>b1) then 
+  begin
+  writeln('эх, не угадал! попробуй ещё!');
+  goto m2;
+  end
+  else writeln('угадал подряд второе число!!!');
+  /////////-3-//////// софья, а третье число сможешь? :))
+readln();
+end.
