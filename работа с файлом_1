@@ -1,0 +1,10 @@
+program pr1;
+var fepas: Text;
+begin
+  Assign(fepas, 'C:\PABCWork.NET\Output\fedos.txt');
+  Rewrite(fepas);
+  Writeln(fepas, 'Азия');
+  Writeln(fepas, 1998);
+  Writeln(fepas, 'Привет, мир!');
+  Close(fepas);
+end.
