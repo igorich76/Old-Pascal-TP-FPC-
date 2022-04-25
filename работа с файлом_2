@@ -1,0 +1,13 @@
+program pr1;
+var fepas: Text; a,b,c: string;
+begin
+ Assign(fepas, 'C:\PABCWork.NET\Output\fedos.txt');
+ Reset(fepas);
+ Readln(fepas,a);
+ Readln(fepas,b);
+ Readln(fepas,c);
+ Close(fepas);
+ Writeln(a);
+ Writeln(b);
+ Writeln(c);
+end.
