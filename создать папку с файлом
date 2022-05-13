@@ -1,0 +1,11 @@
+uses Utils; 
+var
+  f: text;
+ 
+begin
+  CreateDir('D:\Школа');
+  CreateDir('D:\Школа\классы');
+  Assign(f, 'D:\Школа\классы\8''''б''''.txt');
+  Rewrite(f);
+  Close(f);
+end.
